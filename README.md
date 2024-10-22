@@ -1,1 +1,16 @@
 # Robotica
+Proiectul are ca scop simularea unui proces de încărcare utilizând LED-uri pentru a indica nivelul de încărcare și o LED RGB pentru a semnaliza starea ocupată sau liberă. De asemenea, se utilizează butoane pentru a controla începutul și oprirea procesului de încărcare.
+
+Componente utilizate:
+   4x LED-uri (pentru a simula procentul de încărcare)
+   1x LED RGB (pentru starea de liber sau ocupat)
+   2x Butoane (pentru start încărcare și stop încărcare)
+   8x Rezistoare (6x 220/330ohm, 2x 1K)
+   Breadboard
+   Linii de legătură
+
+Schema in tinkercad
+https://www.tinkercad.com/things/7yVEdgs8JHU-tema1?sharecode=a0g7MjG-lSpoVmjdjqIhtrymFh-3lQHNsHIrV9_jAz0
+
+link videoclip:
+https://youtube.com/shorts/QAbiDy6bafw?si=tbhgFgWjmICH4UNL
