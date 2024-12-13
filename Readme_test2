@@ -1,1 +1,55 @@
-Acest cod implementează un joc interactiv pe Arduino, utilizând un LED RGB pentru semnalizarea stărilor, două butoane pentru control și un terminal serial pentru afișarea cuvintelor și interacțiunea cu utilizatorul. Jocul constă în introducerea corectă a cuvintelor afișate într-un timp limitat, controlând astfel dificultatea și testând reacția utilizatorului.
+# Joc Interactiv pe Arduino
+
+Acest proiect implementează un joc interactiv utilizând Arduino. Se folosește un LED RGB pentru semnalizarea stărilor, două butoane pentru control și un terminal serial pentru afișarea cuvintelor și interacțiunilor.
+
+## Componente
+- Placă Arduino
+- LED RGB
+- Două butoane push
+- Terminal serial
+
+
+## Cum se Joacă
+- Jocul va începe prin afișarea unui cuvânt pe terminalul serial.
+- Folosește butoanele pentru a controla jocul și a interacționa cu cuvintele afișate.
+- LED-ul RGB își va schimba culorile pentru a semnala diferite stări ale jocului.
+
+## Cod
+Codul pentru acest proiect este disponibil în repository.
+
+## Funcționalități
+
+- **Repaus:** LED-ul este alb.
+- **Numărătoare inversă la start:** LED-ul clipește galben.
+- **În timpul jocului:**
+  - Verde indică răspunsuri corecte.
+  - Roșu indică răspunsuri greșite.
+- **Finalul rundei:** LED-ul devine roșu, apoi revine la alb.
+- **Control prin butoane:**
+
+  - **Buton Start/Stop:**
+    - Inițiază o rundă nouă (start) cu o numărătoare inversă.
+    - Oprește runda curentă (stop) oricând în timpul jocului.
+  - **Buton Dificultate:**
+    - Disponibil doar în repaus.
+    - La fiecare apăsare, dificultatea ciclă între trei niveluri:
+      - Easy: 3 secunde între cuvinte.
+      - Medium: 2 secunde între cuvinte.
+      - Hard: 1 secundă între cuvinte.
+    - Mesajul cu nivelul de dificultate selectat este afișat în terminalul serial.
+  
+- **Generare și verificare a cuvintelor:**
+  - Jocul folosește un dicționar de cuvinte.
+  - Cuvintele sunt afișate în ordine aleatorie în terminalul serial.
+  - Utilizatorul trebuie să tasteze corect cuvintele.
+
+- **Feedback vizual și textual:**
+  - Dacă răspunsul este corect, apare imediat un nou cuvânt.
+  - Dacă răspunsul este greșit, LED-ul devine roșu pentru scurt timp.
+
+- **Timpul jocului:**
+  - Fiecare rundă durează 30 de secunde.
+  - Numărul de cuvinte corect scrise este afișat la finalul rundei.
+
+- **Debouncing și întreruperi pentru butoane:**
+  - Apăsările multiple sunt filtrate pentru o interacțiune precisă.
