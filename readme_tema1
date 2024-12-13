@@ -1,4 +1,3 @@
-# Robotica
 Proiectul are ca scop simularea unui proces de încărcare utilizând LED-uri pentru a indica nivelul de încărcare și o LED RGB pentru a semnaliza starea ocupată sau liberă. De asemenea, se utilizează butoane pentru a controla începutul și oprirea procesului de încărcare.
 
 Componente utilizate:
