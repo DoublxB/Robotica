@@ -1,0 +1,1 @@
+Acest cod implementează un joc interactiv pe Arduino, utilizând un LED RGB pentru semnalizarea stărilor, două butoane pentru control și un terminal serial pentru afișarea cuvintelor și interacțiunea cu utilizatorul. Jocul constă în introducerea corectă a cuvintelor afișate într-un timp limitat, controlând astfel dificultatea și testând reacția utilizatorului.
